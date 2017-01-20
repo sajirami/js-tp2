@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS/HTML Workshop with Drivy</title>
+    <link rel ="stylesheet" type ="text/css" href ="style.css">
+  </head>
+  <body>
+    <div id="car">
+      <input class="model" type="text" placeholder="Car model"/>
+      <input class="price-by-day" type="number" placeholder="Price by day"/>
+      <input class="price-by-km" type="number" placeholder="Price by km"/>
+    </div>
+    <div id="rental">
+      <input class="begin" type="date" placeholder="Rental begin date"/>
+      <input class="end" type="date" placeholder="Rental end date"/>
+      <input class="distance" type="number" placeholder="Distance in km"/>
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+    </div>
+    <button id="compute">Compute</button>
+    <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+
+    <div id="slideShowImages">
+        <img src="Audi_A1_2012_06_1024x768.jpg" alt="Slide 1" style="float:right;width:400px;height:300px"/>
+        <img src="BMW_2014_i3_010_1024x768.jpg" alt="Slide 2" style="float:right;width:400px;height:00px"/>
+        <img src="Fiat_124Spider_02.jpg" alt="Slide 1" style="float:right;width:400px;height:300px"/>
+        <img src="Fiat_2013_abarth_500C_001_1024x768.jpg" alt="Slide 2" style="float:right;width:400px;height:300px"/>
+        <img src="Jeep_Wrangler_Moab_2013_01_1024x768.jpg" alt="Slide 1" style="float:right;width:400px;height:300px"/>
+
+    </div>
+
+    <script src="slideShow.js"></script>
+  </body>
+</html>

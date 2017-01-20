@@ -1,0 +1,38 @@
+body{
+	font-family: 'Segoe UI';
+	text-align: right;
+	background-image: url('visuel_location_vehicule.jpg');
+	background-size: 1500px 800px;
+
+}
+#car{
+	padding-right:50px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+
+}
+#rental{
+	padding-right:50px;
+
+}
+#compute{
+	margin-right: 300px;
+	margin-top: 20px;
+}
+#slideShowImages{
+	text-align: right;
+	margin: 0 auto;
+	padding-right:50px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	
+}
+
+.slides{
+    float:right;
+	width:50%;
+	height:50%;
+	padding-right:50px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
